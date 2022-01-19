@@ -4,17 +4,17 @@ const { fifaData } = require('./fifa.js')
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 1: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Practice accessing data by console.log-ing the following pieces of data note, you may want to filter the data first 😉*/
-
+const fifa2014wcf = fifaData.filter((items) => items['Year'] === 2014 && items['Stage'] === 'Final');
 //(a) Home Team name for 2014 world cup final
-
+console.log(`Task 1a: The home team's name for the 2014 world cup final is "${fifa2014wcf[0]["Home Team Name"]}".`);
 //(b) Away Team name for 2014 world cup final
-
+console.log(`Task 1b: The away team's name for the 2014 world cup final is "${fifa2014wcf[0]["Away Team Name"]}".`);
 //(c) Home Team goals for 2014 world cup final
-
+console.log(`Task 1c: The home team's score for the 2014 world cup final is "${fifa2014wcf[0]["Home Team Goals"]}".`);
 //(d) Away Team goals for 2014 world cup final
-
+console.log(`Task 1d: The away team's score for the 2014 world cup final is "${fifa2014wcf[0]["Away Team Goals"]}".`);
 //(e) Winner of 2014 world cup final */
-
+console.log(`Task 1e: The winner of the 2014 world cup final is "${fifa2014wcf[0][fifa2014wcf[0]["Home Team Goals"]>fifa2014wcf[0]["Away Team Goals"] ? ["Home Team Name"] : ["Away Team Name"]]}".`);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use getFinals to do the following:
